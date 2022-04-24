@@ -1,0 +1,4 @@
+/.vscode
+/build_*
+*.blend1
+khafile.js
