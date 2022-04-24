@@ -8,13 +8,17 @@ The material is more or less based on [this](https://alexanderameye.github.io/no
 This material requires Armory SDK 22.05 (not yet released) or Armory [`5b5e678`](https://github.com/armory3d/armory/commit/5b5e67834c5e3ed6e766df9efdaa0b39cd624e8d) and Iron [`e11620a`](https://github.com/armory3d/iron/commit/e11620a286759cb70097b1f38b4379fb909b6f94).
 
 ## Setup
+
+### Project Setup
 1. Clone this repository
 2. Copy the `Assets`, `Bundled` and `Shaders` folders to your project's directory
 3. Load `Assets/Caustics_1.png` or a different caustics texture into your blend file and make sure its used and saved (with fake user or use it in a material node)
 4. Make sure your project uses the deferred render path (`Render Properties > Armory Render Path > Renderer > Deferred Clustered`)
-5. In your project, add a cube and give it a new material
-6. In the material properties, enable `Armory Props > Read Depth` and set `Custom Material` to `CausticsVolume`.
-7. In the `Bind Textures` panel below (only visible if a `Custom Material` is set), select the caustics texture and set `Uniform Name` to `tex_caustics`
+
+### Material Setup
+1. In your project, add a cube and give it a new material
+2. In the material properties, enable `Armory Props > Read Depth` and set `Custom Material` to `CausticsVolume`.
+3. In the `Bind Textures` panel below (only visible if a `Custom Material` is set), select the caustics texture and set `Uniform Name` to `tex_caustics`
    <br><br>
    ![Material UI screenshot](/.github/material_setup.png)
    
