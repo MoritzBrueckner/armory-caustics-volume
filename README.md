@@ -9,6 +9,8 @@ This material requires Armory SDK 22.05 (not yet released) or Armory [`5b5e678`]
 
 ## Setup
 
+> The included example file [CausticsVolume.blend](/CausticsVolume.blend) is not required for using this shader. You can delete it locally after downloading this repository.
+
 ### Project Setup
 1. Clone this repository
 2. Copy the `Assets`, `Bundled` and `Shaders` folders to your project's directory
