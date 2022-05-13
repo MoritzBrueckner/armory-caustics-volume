@@ -14,8 +14,9 @@ This material requires Armory SDK 22.05 (not yet released) or Armory [`5b5e678`]
 ### Project Setup
 1. Clone this repository
 2. Copy the `Assets`, `Bundled` and `Shaders` folders to your project's directory
-3. Load `Assets/Caustics_1.png` or a different caustics texture into your blend file and make sure its used and saved (with fake user or use it in a material node)
-4. Make sure your project uses the deferred render path (`Render Properties > Armory Render Path > Renderer > Deferred Clustered`)
+3. Make sure that the scene has a sun light since the shader uses that to project the caustics onto the meshes inside the volume.
+4. Load `Assets/Caustics_1.png` or a different caustics texture into your blend file and make sure its used and saved (with fake user or use it in a material node)
+5. Make sure your project uses the deferred render path (`Render Properties > Armory Render Path > Renderer > Deferred Clustered`)
 
 ### Material Setup
 1. In your project, add a cube and give it a new material
