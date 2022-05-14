@@ -5,7 +5,7 @@
 This is a custom material for Armory 3D for drawing underwater caustics inside of a mesh (preferably a rectangular solid) as if it was a volume. You can even move the camera into the volume mesh.
 The material is more or less based on [this](https://alexanderameye.github.io/notes/realtime-caustics/) neat tutorial by Alexander Ameye, the caustics texture was generated with [this tool](https://www.cathalmcnally.com/news/free-caustics-generator/).
 
-This material requires Armory SDK 22.05 (not yet released) or Armory [`5b5e678`](https://github.com/armory3d/armory/commit/5b5e67834c5e3ed6e766df9efdaa0b39cd624e8d) and Iron [`e11620a`](https://github.com/armory3d/iron/commit/e11620a286759cb70097b1f38b4379fb909b6f94).
+This material requires Armory SDK 22.05 or newer, earlier versions will not work correctly.
 
 ## Setup
 
