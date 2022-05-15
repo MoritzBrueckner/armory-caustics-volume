@@ -64,7 +64,7 @@ void main() {
     vec3 causticstex = texture(tex_caustics, uv1).rgb;
     vec3 causticstex2 = texture(tex_caustics, uv2).rgb;
 
-    float caustics = min(causticstex.r, causticstex2.r) * edgeFadeMask;
+    vec3 caustics = min(causticstex, causticstex2) * edgeFadeMask;
 
     #ifdef DEBUG
         #if DEBUG_DRAW_MODE == DEBUG_DRAW_DEPTH
@@ -83,8 +83,8 @@ void main() {
             vec3 basecol = vec3(edgeFadeMask);
         #endif
     #else
-        caustics.x *= caustics.x;
-        vec3 basecol = caustics.xxx * sunColor * CAUSTICS_STRENGTH;
+        caustics *= caustics;
+        vec3 basecol = caustics * sunColor * CAUSTICS_STRENGTH;
     #endif
 
     // Store in gbuffer (see layout table above)
