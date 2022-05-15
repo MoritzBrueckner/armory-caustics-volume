@@ -19,7 +19,9 @@ This material requires Armory SDK 22.05 or newer, earlier versions will not work
 5. Make sure your project uses the deferred render path (`Render Properties > Armory Render Path > Renderer > Deferred Clustered`)
 
 ### Material Setup
-1. In your project, add a cube and give it a new material
+1. In your project, add a cube and give it a new material.
+   <br><br>
+   > You might want to display the mesh as wireframe in the viewport by setting `Object Properties > Viewport Display > Display As` to `Wire`.
 2. In the material properties, enable `Armory Props > Read Depth` and set `Custom Material` to `CausticsVolume`.
 3. In the `Bind Textures` panel below (only visible if a `Custom Material` is set), select the caustics texture and set `Uniform Name` to `tex_caustics`
    <br><br>
